@@ -1,0 +1,129 @@
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.credit-card {
+    background-color: #fff;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-type {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.card-front, .card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card-chip {
+    background: url('chip.png') no-repeat;
+    background-size: contain;
+    height: 40px;
+    margin-left: auto;
+}
+
+.card-number {
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card-holder, .card-valid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-holder-name, .card-valid-thru {
+    font-size: 14px;
+}
+
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.card-magnetic {
+    background-color: #222;
+    height: 40px;
+    margin: 20px 0;
+}
+
+.card-signature {
+    margin: 20px 0;
+    height: 40px;
+    background-color: #ccc;
+}
+
+.application-form {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
